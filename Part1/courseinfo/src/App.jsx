@@ -1,5 +1,5 @@
 const Header = (props) => {
-  console.log(props)
+  console.log({Header: props.course})
   return <h1>{props.course}</h1>
   
 }
@@ -9,7 +9,7 @@ const Part = (props) => {
 }
 
 const Content = ({ parts }) => {
-  console.log( { parts })
+  console.log( { Content: parts } )
   return (
     <div>
      { parts.map((part, index) => (
